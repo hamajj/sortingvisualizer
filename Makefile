@@ -4,7 +4,7 @@ LDFLAGS = -lraylib -lm -ldl -pthread
 
 SRC = src/main.c src/sort.c
 OBJ = $(SRC:.c=.o)
-TARGET = sorting_visualizer
+TARGET = sorting_visualizer.out
 
 all: $(TARGET) clean
 

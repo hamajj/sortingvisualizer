@@ -22,3 +22,12 @@ void bubble_sort_step(int arr[], int size, int *i, int *j) {
         }
     }
 }
+
+int isSorted(int arr[], int size) {
+    for (int i = 0; i < size - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            return 0; // Array is not sorted
+        }
+    }
+    return 1; // Array is sorted
+}
